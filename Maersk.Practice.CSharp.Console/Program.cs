@@ -1,4 +1,4 @@
-﻿namespace Maersk.Practice.CSharp.Console
+﻿namespace Maersk.Practice.CSharp.ConsoleUI
 {
     internal class Program
     {
