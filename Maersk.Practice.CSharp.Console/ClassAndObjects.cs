@@ -17,7 +17,7 @@ namespace PracticeCode
             ClassAndObjects cat = new ClassAndObjects();
             cat.name = "Kitty";
             cat.age = 2;
-            cat.colour = "white";
+            cat.colour = "pink";
 
             Console.WriteLine("Hi my name is {0}, I am {1} years old and I am {2} in colour.", cat.name, cat.age, cat.colour);
         }
