@@ -8,6 +8,8 @@ namespace PracticeCode
 {
     internal class Arrays
     {
+
+        int yyy = 14;
         static void PrintMaxElement(int[] arr)
         {
             int max = arr[0];
