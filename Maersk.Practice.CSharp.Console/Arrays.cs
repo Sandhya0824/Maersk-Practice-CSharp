@@ -11,7 +11,7 @@ namespace PracticeCode
         int xx = 10;
 
         int yyy = 14;
-        int zzz = 15;
+        int zzz = 20;
         static void PrintMaxElement(int[] arr)
         {
             int max = arr[0];
