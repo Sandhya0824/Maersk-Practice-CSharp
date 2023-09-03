@@ -11,6 +11,7 @@ namespace C_SharpLearning
         public AboveThreshold() 
         {
             Console.WriteLine("Warning......!!!");
+            Console.WriteLine();
         }
 
     }
