@@ -10,12 +10,41 @@ namespace Maersk.Practice.CSharp.ConsoleUI.File_IO
     {
         public static void Main(string[] args)
         {
-            string path = "C:\\Interns.Maersk.Practice\\Maersk-Practice-CSharp\\fileInfoPractice.txt";
+            string sourcePath = "C:\\Interns.Maersk.Practice\\Maersk-Practice-CSharp\\fileInfoPractice.txt";
+            string targetPath = "C:\\Interns.Maersk.Practice\\Maersk-Practice-CSharp\\fileInfoPractice2.txt";
 
-            FileInfo fileInfo = WriteFile(path);
-            System.Console.WriteLine(ReadFile(path, fileInfo));
-            
+            FileInfo fileInfo = new FileInfo(sourcePath);
+            FileInfo fileInfo2 = new FileInfo(sourcePath);
+
+
+            System.Console.WriteLine(FileLength(fileInfo2));
         }
+
+        public static void FileDelete(FileInfo fileInfo)
+        {
+            fileInfo.Delete();
+        }
+
+        public static string DirectoryName(FileInfo fileInfo)
+        {
+            return fileInfo.DirectoryName;
+        }
+
+        public static bool FileExists(FileInfo fileInfo)
+        {
+            return fileInfo.Exists;
+        }
+
+        public static string FileExtension(FileInfo fileInfo)
+        {
+            return fileInfo.Extension;
+        }
+
+        public static long FileLength(FileInfo fileInfo)
+        {
+            return fileInfo.Length;
+        }
+
 
         public static FileInfo WriteFile(string path)
         {

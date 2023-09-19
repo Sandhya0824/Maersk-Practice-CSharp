@@ -6,14 +6,36 @@ using System.Threading.Tasks;
 
 namespace Maersk.Practice.CSharp.ConsoleUI.File_IO
 {
-    internal class DirectoryInfoReaderWriterPractice
+    internal class DirectoryClassPractice
     {
         public static void Main(string[] args)
         {
-            string path = "C:\\Interns.Maersk.Practice\\Maersk-Practice-CSharp\\directoryInfoPractice.txt";
+            string sourcePath = "C:\\Interns.Maersk.Practice\\Maersk-Practice-CSharp\\DirectoryPractice";
 
-            CreateDirectory(path);
-            DeleteDirectory(path);
+            CreateDirectory(sourcePath);
+
+            string[] files= GetFiles(sourcePath);
+            foreach (string file in files )
+            {
+                System.Console.WriteLine(file);
+            }
+        }
+
+        public static bool DirectoryExists(string sourcePath)
+        {
+            return Directory.Exists(sourcePath);
+        }
+
+        public static string[] GetDirectories(string sourcePath)
+        {
+            string[] directories = Directory.GetDirectories(sourcePath);
+            return directories;
+        }
+
+        public static string[] GetFiles(string sourcePath)
+        {
+            string[] files = Directory.GetFiles(sourcePath);
+            return files;
         }
 
         public static void CreateDirectory(string path)
