@@ -4,21 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_SharpLearning
+namespace Maersk.Practice.CSharp.ConsoleUI.CSharpBasics
 {
     internal class StringQuestionPractice
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine();
+            System.Console.WriteLine();
         }
 
         public string reverseWords(string s)
         {
             //Your code here
-            String answer = "";
+            string answer = "";
             char[] separator = { '.' };
-            String[] str = s.Split(separator);
+            string[] str = s.Split(separator);
             for (int i = str.Length - 1; i >= 0; i--)
             {
                 answer += "." + str[i];
@@ -26,14 +26,14 @@ namespace C_SharpLearning
             return answer.Substring(1);
         }
 
-        String longestCommonPrefix(String[] arr, int N)
+        string longestCommonPrefix(string[] arr, int N)
         {
             // code here
             if (N == 1)
             {
                 return arr[0];
             }
-            String ans = prefix(arr[0], arr[1]);
+            string ans = prefix(arr[0], arr[1]);
             for (int i = 2; i < N; i++)
             {
                 ans = prefix(ans, arr[i]);
@@ -41,9 +41,9 @@ namespace C_SharpLearning
             return ans;
         }
 
-        String prefix(String str1, String str2)
+        string prefix(string str1, string str2)
         {
-            String str = "";
+            string str = "";
             int len = Math.Min(str1.Length, str2.Length);
             for (int i = 0; i < len; i++)
             {

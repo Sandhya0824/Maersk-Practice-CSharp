@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_SharpLearning
+namespace Maersk.Practice.CSharp.ConsoleUI.CSharpBasics
 {
 
     class Employee
     {
         private static int count;           //static property
-        public String name=" ";             //public property
+        public string name = " ";             //public property
         private int salary;                 //private property
         public Employee() { count++; }
 
@@ -21,7 +21,7 @@ namespace C_SharpLearning
             this.name = name;
         }
 
-        public int Salary { get { return salary; } set {  salary = value; } }   //accessors
+        public int Salary { get { return salary; } set { salary = value; } }   //accessors
         public string Name { get { return name; } }
     }
     internal class Properties
@@ -36,9 +36,9 @@ namespace C_SharpLearning
             Employee employee4 = new Employee("Ram");
             employee3.name = "Ram";
             employee3.Salary = 100;
-            Console.WriteLine("Employee Name: " + employee3.Name + " Employee Salary:" + employee3.Salary);
+            System.Console.WriteLine("Employee Name: " + employee3.Name + " Employee Salary:" + employee3.Salary);
 
-            Console.WriteLine("Employee Count : "+Employee.Count);
+            System.Console.WriteLine("Employee Count : " + Employee.Count);
         }
     }
 }

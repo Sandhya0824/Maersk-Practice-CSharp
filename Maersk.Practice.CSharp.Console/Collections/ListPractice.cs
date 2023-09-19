@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_SharpLearning
+namespace Maersk.Practice.CSharp.ConsoleUI.Collections
 {
-    internal class ArraysPracticeQuestions
+    internal class ListPractice
     {
     }
 }

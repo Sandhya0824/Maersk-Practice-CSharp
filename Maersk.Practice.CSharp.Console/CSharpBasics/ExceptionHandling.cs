@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_SharpLearning
+namespace Maersk.Practice.CSharp.ConsoleUI.CSharpBasics
 {
     class AboveThreshold : Exception            //User Defined Exception
     {
-        public AboveThreshold() 
+        public AboveThreshold()
         {
-            Console.WriteLine("Warning......!!!");
-            Console.WriteLine();
+            System.Console.WriteLine("Warning......!!!");
+            System.Console.WriteLine();
         }
 
     }
@@ -19,7 +19,7 @@ namespace C_SharpLearning
     {
         public static void Main(string[] args)
         {
-            ExceptionHandling e=new ExceptionHandling();
+            ExceptionHandling e = new ExceptionHandling();
             //e.CheckThreshold(25);
             //e.CheckThreshold(60);   
 
@@ -32,7 +32,7 @@ namespace C_SharpLearning
             unchecked
             {
                 int n1 = int.MaxValue;
-                Console.WriteLine(n1 + 2);    //explicitly does not checks and produces wrong results
+                System.Console.WriteLine(n1 + 2);    //explicitly does not checks and produces wrong results
             }
         }
 
@@ -44,7 +44,7 @@ namespace C_SharpLearning
             }
             else
             {
-                Console.WriteLine("You are good to go!");
+                System.Console.WriteLine("You are good to go!");
             }
         }
 
@@ -56,30 +56,30 @@ namespace C_SharpLearning
             {
                 for (int i = 0; i < a.Length; i++)
                 {
-                    Console.WriteLine(a[i] / a[i + 1]);
+                    System.Console.WriteLine(a[i] / a[i + 1]);
                 }
             }
             catch (IndexOutOfRangeException e)
             {
-                Console.WriteLine(e.ToString());
+                System.Console.WriteLine(e.ToString());
             }
             catch (ArgumentOutOfRangeException e)
             {
-                Console.WriteLine(e.ToString());
+                System.Console.WriteLine(e.ToString());
             }
             catch (DivideByZeroException e)
             {
-                Console.WriteLine(e.ToString());
+                System.Console.WriteLine(e.ToString());
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                System.Console.WriteLine(e.ToString());
             }
             finally
             {
                 for (int i = 0; i < a.Length; i++)
                 {
-                    Console.WriteLine(a[i]);
+                    System.Console.WriteLine(a[i]);
                 }
             }
         }

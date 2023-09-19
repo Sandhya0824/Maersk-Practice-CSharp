@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_SharpLearning
+namespace Maersk.Practice.CSharp.ConsoleUI.CSharpBasics
 {
     interface IVehicle
     {
@@ -34,7 +34,7 @@ namespace C_SharpLearning
 
         public void displayResults()
         {
-            Console.WriteLine("Gear Changes : " + gear + " Speed : " + speed);
+            System.Console.WriteLine("Gear Changes : " + gear + " Speed : " + speed);
         }
     }
     internal class InterfacePractice

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_SharpLearning
+namespace Maersk.Practice.CSharp.ConsoleUI.CSharpBasics
 {
     internal class Arrays
     {
 
-        public static void Main(String[] args)
+        public static void Main(string[] args)
         {
             int[][] a = new int[3][]
             {
@@ -20,23 +20,23 @@ namespace C_SharpLearning
 
             //   printArray(a);      //printitng jagged array
 
-            int[,] b = new int[3,4];
+            int[,] b = new int[3, 4];
 
-            Console.WriteLine(b.Length);
-            Console.WriteLine(b.Rank);
+            System.Console.WriteLine(b.Length);
+            System.Console.WriteLine(b.Rank);
 
             printArray();
         }
 
         public static void printArray(params int[][] array)     //params
         {
-            for(int i=0;i<array.Length; i++)
+            for (int i = 0; i < array.Length; i++)
             {
-                for(int j = 0; j < array[i].Length; j++)
+                for (int j = 0; j < array[i].Length; j++)
                 {
-                    Console.Write(array[i][j]+" ");
+                    System.Console.Write(array[i][j] + " ");
                 }
-                Console.WriteLine();
+                System.Console.WriteLine();
             }
         }
 

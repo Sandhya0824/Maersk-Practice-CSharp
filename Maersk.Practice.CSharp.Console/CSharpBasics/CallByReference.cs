@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_SharpLearning
+namespace Maersk.Practice.CSharp.ConsoleUI.CSharpBasics
 {
     internal class CallByReference
     {
@@ -14,14 +14,14 @@ namespace C_SharpLearning
             return x;
         }
 
-        public static void Main(String[] args)
+        public static void Main(string[] args)
         {
             int a = 30;
             CallByReference obj1 = new CallByReference();
-            Console.WriteLine("Value Before Call By Reference: {0} ", a);
+            System.Console.WriteLine("Value Before Call By Reference: {0} ", a);
 
             obj1.foo(ref a);
-            Console.WriteLine("Value After Call By Reference: {0} ", a);
+            System.Console.WriteLine("Value After Call By Reference: {0} ", a);
         }
     }
 }

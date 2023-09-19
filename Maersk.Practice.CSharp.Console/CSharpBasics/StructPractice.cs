@@ -4,27 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_SharpLearning
+namespace Maersk.Practice.CSharp.ConsoleUI.CSharpBasics
 {
     struct Address
     {
-       public string City;
+        public string City;
     }
     struct Name                     //value-type, No Inheritance
     {
-        public String fName, lName;
+        public string fName, lName;
 
         public Address address;     //nested struct
 
-        public  Name(String val1, String val2)      //No parameterless constructors allowed
+        public Name(string val1, string val2)      //No parameterless constructors allowed
         {
-            fName= val1;
-            lName= val2;
+            fName = val1;
+            lName = val2;
         }
 
         public void display()
         {
-            Console.WriteLine("First Name: " + fName + " " + " Last Name: " + lName);
+            System.Console.WriteLine("First Name: " + fName + " " + " Last Name: " + lName);
         }
 
     }
@@ -39,7 +39,7 @@ namespace C_SharpLearning
             sp1.display();
 
             sp1.address.City = "Raipur";
-            Console.WriteLine("Address: "+sp1.address.City);
+            System.Console.WriteLine("Address: " + sp1.address.City);
 
             Name sp2 = new Name("Raj", "Anand");
             sp2.display();
@@ -50,5 +50,5 @@ namespace C_SharpLearning
             sp3.display();
         }
     }
-    
+
 }

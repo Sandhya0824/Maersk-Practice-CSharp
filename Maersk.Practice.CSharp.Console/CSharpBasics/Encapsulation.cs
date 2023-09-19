@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_SharpLearning
+namespace Maersk.Practice.CSharp.ConsoleUI.CSharpBasics
 {
     public class BankAccount
     {
         private static double _balance;
 
         public BankAccount() { }
-        public BankAccount(double balance) 
+        public BankAccount(double balance)
         {
             _balance = balance;
         }
@@ -28,22 +28,22 @@ namespace C_SharpLearning
             }
             else
             {
-                Console.WriteLine("Insufficient Funds");
+                System.Console.WriteLine("Insufficient Funds");
             }
         }
 
-        public double GetBalance() { return _balance;}
+        public double GetBalance() { return _balance; }
 
     }
     internal class Encapsulation
     {
         public static void Main(string[] args)
         {
-            BankAccount bankAccount=new BankAccount(50000);
+            BankAccount bankAccount = new BankAccount(50000);
             bankAccount.Deposit(500);
-            Console.WriteLine("Balance = " + bankAccount.GetBalance());
+            System.Console.WriteLine("Balance = " + bankAccount.GetBalance());
             bankAccount.Withdraw(100);
-            Console.WriteLine("Balance = " + bankAccount.GetBalance());
+            System.Console.WriteLine("Balance = " + bankAccount.GetBalance());
         }
     }
 }

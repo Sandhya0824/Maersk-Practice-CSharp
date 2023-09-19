@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_SharpLearning
+namespace Maersk.Practice.CSharp.ConsoleUI.CSharpBasics
 {
     public class DetailedAddress                    //defining the class as an Entity
     {
@@ -35,8 +35,8 @@ namespace C_SharpLearning
 
         public void displayDetails()
         {
-            Console.WriteLine("Student ID: "+studentId+" Name: "+name+" Address: "+detailedAddress.flatNo
-                +" , "+detailedAddress.building+" , "+detailedAddress.landmark);
+            System.Console.WriteLine("Student ID: " + studentId + " Name: " + name + " Address: " + detailedAddress.flatNo
+                + " , " + detailedAddress.building + " , " + detailedAddress.landmark);
         }
     }
     internal class Aggregation

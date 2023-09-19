@@ -1,4 +1,4 @@
-﻿using C_SharpLearning;
+﻿using Maersk.Practice.CSharp.ConsoleUI.CSharpBasics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ using third;
 //protected internal -- same assembly and derived class
 //private -- same class
 //private protected -- same class and derived classes
-namespace C_SharpLearning
+namespace Maersk.Practice.CSharp.ConsoleUI.CSharpBasics
 {
     public class CheckAccess
     {
@@ -27,12 +27,12 @@ namespace C_SharpLearning
     {
         public static void Main(string[] args)
         {
-            CheckAccess.i = 0;
-            CheckAccess.j = 0;
-            CheckAccess.k = 0;
-            CheckAccess.l = 0;
+            i = 0;
+            j = 0;
+            k = 0;
+            l = 0;
             //   CheckAccess.m=0;    error
-            CheckAccess.n = 0;
+            n = 0;
         }
 
     }
@@ -44,7 +44,7 @@ namespace first
         static int g;
         public static void display()
         {
-            System.Console.WriteLine("Hello Geeks!");
+            Console.WriteLine("Hello Geeks!");
 
         }
         public static void Main(string[] args)
@@ -52,7 +52,7 @@ namespace first
             CheckAccess.i = 0;
             //   CheckAccess.j = 0; error
             CheckAccess.k = 0;
-            CheckAccess.l = 0;                          
+            CheckAccess.l = 0;
             //   CheckAccess.m=0;    error
             //   CheckAccess.n = 0;  error
         }
@@ -61,23 +61,23 @@ namespace first
 }
 
 namespace second
-{                                 
+{
     class Geeks_2 : CheckAccess                             // derived base class
     {
         static int g;
         public static void display()
         {
-            System.Console.WriteLine("Hello Geeks!");
+            Console.WriteLine("Hello Geeks!");
 
         }
         public static void Main(string[] args)
         {
-            CheckAccess.i = 0;
-            CheckAccess.j = 0; 
-            CheckAccess.k = 0;
-            CheckAccess.l = 0;
+            i = 0;
+            j = 0;
+            k = 0;
+            l = 0;
             //   CheckAccess.m=0;    error
-            CheckAccess.n = 0;  
+            n = 0;
         }
 
     }
@@ -90,7 +90,7 @@ namespace third
         public void display() { }
     }
 
-    class Geeks_5 
+    class Geeks_5
     {
         public static void main(string[] args)
         {
@@ -106,7 +106,7 @@ namespace fourth
     {
         public static void main(string[] args)
         {
-            Geeks_3 geeks_3 = new Geeks_3();        
+            Geeks_3 geeks_3 = new Geeks_3();
             geeks_3.display();
         }
     }

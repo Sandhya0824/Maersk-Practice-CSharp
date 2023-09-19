@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_SharpLearning
+namespace Maersk.Practice.CSharp.ConsoleUI.CSharpBasics
 {
     //Super/Base Class
     public class Human
     {
         public void Eat()
         {
-            Console.WriteLine("Human Eats");
+            System.Console.WriteLine("Human Eats");
         }
     }
 
@@ -20,33 +20,33 @@ namespace C_SharpLearning
     {
         public void Teach()
         {
-            Console.WriteLine("Teacher Teaches");
+            System.Console.WriteLine("Teacher Teaches");
         }
     }
 
     //Multilevel Inheritance
-    class SecondaryChild: Teacher
+    class SecondaryChild : Teacher
     {
         public void Study()
         {
-            Console.WriteLine("Child Studies Secondary Things");
+            System.Console.WriteLine("Child Studies Secondary Things");
         }
     }
 
     class PrimaryChild : SecondaryChild
     {
-        public void StudyChild() 
+        public void StudyChild()
         {
-            Console.WriteLine("Child Studies Primary Things");
+            System.Console.WriteLine("Child Studies Primary Things");
         }
     }
 
     //Hierarchial Inheritance
     class Worker : Human
     {
-       public void Works()
+        public void Works()
         {
-            Console.WriteLine("Worker works");
+            System.Console.WriteLine("Worker works");
         }
     }
 
@@ -54,7 +54,7 @@ namespace C_SharpLearning
     {
         public void Labours()
         {
-            Console.WriteLine("Human do labours");
+            System.Console.WriteLine("Human do labours");
         }
     }
 
@@ -75,41 +75,41 @@ namespace C_SharpLearning
     {
         public void Interface1()
         {
-            Console.WriteLine("In Interface 1");
+            System.Console.WriteLine("In Interface 1");
         }
         public void Interface2()
         {
-            Console.WriteLine("In Interface 2");
+            System.Console.WriteLine("In Interface 2");
         }
     }
-    
+
 
 
     internal class Inheritance
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Single Level Inheritance");
+            System.Console.WriteLine("Single Level Inheritance");
             Teacher teacher = new Teacher();
             teacher.Eat();
             teacher.Teach();
 
-            Console.WriteLine();
-            Console.WriteLine("Multilevel Inheritance");
+            System.Console.WriteLine();
+            System.Console.WriteLine("Multilevel Inheritance");
             PrimaryChild child = new PrimaryChild();
             child.Eat();
             child.Teach();
             child.Study();
             child.StudyChild();
 
-            Console.WriteLine();
-            Console.WriteLine("Hierarchial Inheritance");
+            System.Console.WriteLine();
+            System.Console.WriteLine("Hierarchial Inheritance");
             Worker worker = new Worker();
             worker.Works();
             worker.Eat();
 
-            Console.WriteLine();
-            Console.WriteLine("Multilevel Inheritance");
+            System.Console.WriteLine();
+            System.Console.WriteLine("Multilevel Inheritance");
             CheckInheritance checkInheritance = new CheckInheritance();
             checkInheritance.Interface1();
             checkInheritance.Interface2();

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_SharpLearning
+namespace Maersk.Practice.CSharp.ConsoleUI.CSharpBasics
 {
     internal class OutParameter
     {
@@ -15,12 +15,12 @@ namespace C_SharpLearning
         }
 
 
-        public static void Main(String[] args)
+        public static void Main(string[] args)
         {
             int t;      //not initialized
             OutParameter obj3 = new OutParameter();
             obj3.outParameter(out t);
-            Console.WriteLine("Value After Out Parameter: {0} ", t);
+            System.Console.WriteLine("Value After Out Parameter: {0} ", t);
         }
     }
 }

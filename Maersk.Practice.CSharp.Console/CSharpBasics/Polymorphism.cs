@@ -4,21 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_SharpLearning
+namespace Maersk.Practice.CSharp.ConsoleUI.CSharpBasics
 {
     class ClassAnimal
     {
         public virtual void sound()
         {
-            Console.WriteLine("Animal makes sound");
+            System.Console.WriteLine("Animal makes sound");
         }
     }
-    
+
     class Bird : ClassAnimal
     {
         public override void sound()
         {
-            Console.WriteLine("Bird Chirps");
+            System.Console.WriteLine("Bird Chirps");
         }
     }
 
@@ -26,7 +26,7 @@ namespace C_SharpLearning
     {
         public override void sound()
         {
-            Console.WriteLine("Dog Barks");
+            System.Console.WriteLine("Dog Barks");
         }
     }
     internal class Polymorphism
