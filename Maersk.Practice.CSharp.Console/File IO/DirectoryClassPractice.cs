@@ -10,7 +10,7 @@ namespace Maersk.Practice.CSharp.ConsoleUI.File_IO
     {
         public static void Main(string[] args)
         {
-            string sourcePath = "C:\\Interns.Maersk.Practice\\Maersk-Practice-CSharp\\DirectoryPractice";
+            string sourcePath = "C:\\Interns.Maersk.Practice\\Maersk-Practice-C-Sharp\\Maersk-Practice-CSharp\\DirectoryPractice";
 
             CreateDirectory(sourcePath);
 

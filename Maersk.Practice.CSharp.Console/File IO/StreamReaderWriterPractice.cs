@@ -10,7 +10,7 @@ namespace Maersk.Practice.CSharp.ConsoleUI
     {
         public static void Main(string[] args)
         {
-            string path = "C:\\Interns.Maersk.Practice\\Maersk-Practice-CSharp\\streamPractice.txt";
+            string path = "C:\\Interns.Maersk.Practice\\Maersk-Practice-C-Sharp\\Maersk-Practice-CSharp\\streamPractice.txt";
             FileStream fileStream = new FileStream(path, FileMode.Create);
             
             StreamWriter streamWriter = new StreamWriter(fileStream);     //single line of data into the file

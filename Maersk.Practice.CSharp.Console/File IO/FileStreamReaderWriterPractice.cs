@@ -11,7 +11,7 @@ namespace Maersk.Practice.CSharp.ConsoleUI
     {
         public static void Main(string[] args)
         {
-            FileStream fileStream = new FileStream("C:\\Interns.Maersk.Practice\\Maersk-Practice-CSharp\\practice.txt", FileMode.OpenOrCreate);
+            FileStream fileStream = new FileStream("C:\\Interns.Maersk.Practice\\Maersk-Practice-C-Sharp\\Maersk-Practice-CSharp\\practice.txt", FileMode.OpenOrCreate);
             byte value = 65;                //writing bytes into the file
             fileStream.WriteByte(value);
 

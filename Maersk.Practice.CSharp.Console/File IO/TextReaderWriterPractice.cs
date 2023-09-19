@@ -11,7 +11,7 @@ namespace Maersk.Practice.CSharp.ConsoleUI
     {
         public static void Main(string[] args)
         {
-            string path = "C:\\Interns.Maersk.Practice\\Maersk-Practice-CSharp\\textPractice.txt";
+            string path = "C:\\Interns.Maersk.Practice\\Maersk-Practice-C-Sharp\\Maersk-Practice-CSharp\\textPractice.txt";
 
             WriteTextFile(path);
             ReadTextFile(path);
