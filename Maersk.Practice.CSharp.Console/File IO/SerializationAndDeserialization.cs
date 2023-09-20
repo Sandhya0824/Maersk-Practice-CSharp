@@ -5,18 +5,21 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Serialization;
+using System.Text.Json;
 
 namespace Maersk.Practice.CSharp.ConsoleUI
 {
     [Serializable]
     class Employee
     {
-        public int id { get; set; }
-        public string name { get; set; }
+        public int EmployeeId { get; set; }
+        public string EmployeeName { get; set; }
+
+        public Employee() { }
         public Employee(int id, string name)
         {
-            this.id = id;
-            this.name = name;
+            this.EmployeeId = id;
+            this.EmployeeName = name;
         }
     }
     internal class SerializationAndDeserialization
@@ -38,14 +41,13 @@ namespace Maersk.Practice.CSharp.ConsoleUI
 
         public static void Serialization(string path)
         {
-         /*   using (FileStream fileStream = new FileStream(path, FileMode.OpenOrCreate))
+          /*  using (FileStream fileStream = new FileStream(path, FileMode.OpenOrCreate))
             {
                 BinaryFormatter binaryFormatter = new BinaryFormatter(); 
 
                 Employee employee = new Employee(1011, "Ram");
                 binaryFormatter.Serialize(fileStream, employee);
-                fileStream.Close();
-            } */
+            }   */
            
         }
     }
