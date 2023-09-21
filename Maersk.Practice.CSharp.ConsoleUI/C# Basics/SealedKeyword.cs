@@ -37,10 +37,10 @@ namespace PracticeCode
             { 
                 Console.WriteLine("Baby dog is eating biscuits"); 
             }
-            public override void run() 
+            /* public override void run() 
             { 
                 Console.WriteLine("Baby dog is running slowly"); 
-            }
+            } */
         }
         public class TestSealed
         {
