@@ -5,7 +5,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Maersk.Practice.CSharp.ConsoleUI.FileIO.FileStreamExample</StartupObject>
+    <StartupObject>Maersk.Practice.CSharp.ConsoleUI.FileIO.StreamReaderExample</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
