@@ -12,10 +12,11 @@ namespace C__Basics.Collections
     {
         public static void Main(string[] args)
         {
+            //Example 1
             List<int> firstList = new List<int>();
             Console.WriteLine("Display the number of elements of List<T>: "+firstList.Count);
 
-            firstList.Add(1);
+            firstList.Add(1); //Example of Add() method.
             firstList.Add(2);
             firstList.Add(3);
             firstList.Add(4);
@@ -24,11 +25,15 @@ namespace C__Basics.Collections
 
             firstList.Add(5);
             firstList.Add(6);
+
             // Printing the Capacity of firstlist. It will give output 8 as internally list is resized
             //  (the current implementation detail will double it's backing store)
-            Console.WriteLine("Capacity Is: " + firstList.Capacity);
-            Console.WriteLine("Count Is: " + firstList.Count);
+            Console.WriteLine("Capacity Is: " + firstList.Capacity); // Example of Capacity()
 
+            Console.WriteLine("Count Is: " + firstList.Count); //Example of Count()
+
+            Console.WriteLine();
+            //Example 2
             var names = new List<string>();
             names.Add("Aakriti Kumari");
             names.Add("Manaswini Ray");
@@ -40,12 +45,36 @@ namespace C__Basics.Collections
             }
             Console.WriteLine();
 
+
+            //Example 3
             var internsName = new List<string>() { "Aakriti", "Manaswini", "Sandhya"};
             foreach(var interns in internsName)
             {
                 Console.WriteLine(interns);
             }
 
+
+            //Example of AddRange(IEnumerable<T>)
+            Console.WriteLine("\nAddRange(internsName)");
+            internsName.AddRange(internsName);
+
+            Console.WriteLine();
+            foreach(var internName in internsName)
+            {
+                Console.WriteLine(internName);
+            }
+
+            //Example of RemoveRange(Int 32, Int 32)
+            Console.WriteLine("\nRemoveRange(2,2)");
+            internsName.RemoveRange(2, 2);
+
+            Console.WriteLine();
+            foreach (var internName in internsName)
+            {
+                Console.WriteLine(internName);
+            }
+
+            
 
 
             //Example of CopyTo() method of List<T>
@@ -58,6 +87,7 @@ namespace C__Basics.Collections
             dinosaurs.Add("Compsognathus");
 
             Console.WriteLine();
+            Console.WriteLine("List of dinosaurs");
             foreach (string dinosaur in dinosaurs)
             {
                 Console.WriteLine(dinosaur);
@@ -80,6 +110,17 @@ namespace C__Basics.Collections
 
             Console.WriteLine("\nContents of the array:");
             foreach (string dinosaur in array)
+            {
+                Console.WriteLine(dinosaur);
+            }
+
+
+            //Example of InsertRange()
+            Console.WriteLine("\nInsertRange(3,internsName)");
+            dinosaurs.InsertRange(3, internsName);
+
+            Console.WriteLine();
+            foreach(string dinosaur in dinosaurs)
             {
                 Console.WriteLine(dinosaur);
             }
