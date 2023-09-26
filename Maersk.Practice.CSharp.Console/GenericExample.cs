@@ -20,12 +20,10 @@ namespace Maersk.Practice.CSharp.Console
     //User defined generics class
     public class GenericExample2<T>
     { 
-        //private data members
-        private T data;
-        
-        //using properties
-        public T value 
-        { 
+        private T data; //private data members
+
+        public T value //using properties
+        {
             get 
             { 
                 return this.data; 
@@ -54,7 +52,5 @@ namespace Maersk.Practice.CSharp.Console
             System.Console.WriteLine("Name of employee: "+name.value);
             System.Console.WriteLine("Salary of employee: "+salary.value);
         }
-
-
     }
 }
