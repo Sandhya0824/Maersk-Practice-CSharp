@@ -5,7 +5,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Maersk.Practice.CSharp.ConsoleUI.Generics.ImplementingStackUsingList.Program</StartupObject>
+    <StartupObject>Maersk.Practice.CSharp.ConsoleUI.Delegates.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
