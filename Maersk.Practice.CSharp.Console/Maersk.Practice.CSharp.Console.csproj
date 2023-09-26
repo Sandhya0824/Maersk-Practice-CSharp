@@ -5,7 +5,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Maersk.Practice.CSharp.Console.GenericExample</StartupObject>
+    <StartupObject>Maersk.Practice.CSharp.Console.DelegatesExample</StartupObject>
   </PropertyGroup>
 
 </Project>
