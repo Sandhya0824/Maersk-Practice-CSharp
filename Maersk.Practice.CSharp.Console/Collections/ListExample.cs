@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C__Basics.Collections
+namespace Maersk.Practice.CSharp.Console.Collections
 {
     public class ListExample
     {
@@ -14,25 +14,25 @@ namespace C__Basics.Collections
         {
             //Example 1
             List<int> firstList = new List<int>();
-            Console.WriteLine("Display the number of elements of List<T>: "+firstList.Count);
+            System.Console.WriteLine("Display the number of elements of List<T>: "+firstList.Count);
 
             firstList.Add(1); //Example of Add() method.
             firstList.Add(2);
             firstList.Add(3);
             firstList.Add(4);
-            Console.WriteLine("Capacity Is: " + firstList.Capacity);
-            Console.WriteLine("Count Is: " + firstList.Count);
+            System.Console.WriteLine("Capacity Is: " + firstList.Capacity);
+            System.Console.WriteLine("Count Is: " + firstList.Count);
 
             firstList.Add(5);
             firstList.Add(6);
 
             // Printing the Capacity of firstlist. It will give output 8 as internally list is resized
             //  (the current implementation detail will double it's backing store)
-            Console.WriteLine("Capacity Is: " + firstList.Capacity); // Example of Capacity()
+            System.Console.WriteLine("Capacity Is: " + firstList.Capacity); // Example of Capacity()
 
-            Console.WriteLine("Count Is: " + firstList.Count); //Example of Count()
+            System.Console.WriteLine("Count Is: " + firstList.Count); //Example of Count()
 
-            Console.WriteLine();
+            System.Console.WriteLine();
             //Example 2
             var names = new List<string>();
             names.Add("Aakriti Kumari");
@@ -41,37 +41,37 @@ namespace C__Basics.Collections
 
             foreach(var name in names)
             {
-                Console.WriteLine(name);
+                System.Console.WriteLine(name);
             }
-            Console.WriteLine();
+            System.Console.WriteLine();
 
 
             //Example 3
             var internsName = new List<string>() { "Aakriti", "Manaswini", "Sandhya"};
             foreach(var interns in internsName)
             {
-                Console.WriteLine(interns);
+                System.Console.WriteLine(interns);
             }
 
 
             //Example of AddRange(IEnumerable<T>)
-            Console.WriteLine("\nAddRange(internsName)");
+            System.Console.WriteLine("\nAddRange(internsName)");
             internsName.AddRange(internsName);
 
-            Console.WriteLine();
+            System.Console.WriteLine();
             foreach(var internName in internsName)
             {
-                Console.WriteLine(internName);
+                System.Console.WriteLine(internName);
             }
 
             //Example of RemoveRange(Int 32, Int 32)
-            Console.WriteLine("\nRemoveRange(2,2)");
+            System.Console.WriteLine("\nRemoveRange(2,2)");
             internsName.RemoveRange(2, 2);
 
-            Console.WriteLine();
+            System.Console.WriteLine();
             foreach (var internName in internsName)
             {
-                Console.WriteLine(internName);
+                System.Console.WriteLine(internName);
             }
 
             
@@ -86,11 +86,11 @@ namespace C__Basics.Collections
             dinosaurs.Add("Brachiosaurus");
             dinosaurs.Add("Compsognathus");
 
-            Console.WriteLine();
-            Console.WriteLine("List of dinosaurs");
+            System.Console.WriteLine();
+            System.Console.WriteLine("List of dinosaurs");
             foreach (string dinosaur in dinosaurs)
             {
-                Console.WriteLine(dinosaur);
+                System.Console.WriteLine(dinosaur);
             }
 
             // Declare an array with 15 elements.
@@ -108,21 +108,21 @@ namespace C__Basics.Collections
             //3: This is the number of elements to copy from the 'dinosaurs' list to the 'array'.
             dinosaurs.CopyTo(2, array, 12, 3);
 
-            Console.WriteLine("\nContents of the array:");
+            System.Console.WriteLine("\nContents of the array:");
             foreach (string dinosaur in array)
             {
-                Console.WriteLine(dinosaur);
+                System.Console.WriteLine(dinosaur);
             }
 
 
             //Example of InsertRange()
-            Console.WriteLine("\nInsertRange(3,internsName)");
+            System.Console.WriteLine("\nInsertRange(3,internsName)");
             dinosaurs.InsertRange(3, internsName);
 
-            Console.WriteLine();
+            System.Console.WriteLine();
             foreach(string dinosaur in dinosaurs)
             {
-                Console.WriteLine(dinosaur);
+                System.Console.WriteLine(dinosaur);
             }
         }
     }

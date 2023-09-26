@@ -5,7 +5,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>C__Basics.Collections.ListExample</StartupObject>
+    <StartupObject>Maersk.Practice.CSharp.Console.Collections.HashSetExample</StartupObject>
   </PropertyGroup>
 
 </Project>
