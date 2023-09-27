@@ -5,27 +5,33 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maersk.Practice.CSharp.ConsoleUI", "Maersk.Practice.CSharp.Console\Maersk.Practice.CSharp.ConsoleUI.csproj", "{7F7333A6-F2E9-4620-BED3-C077B989C4C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maersk.Practice.Generics.UI", "GenericsPractice\Maersk.Practice.Generics.UI.csproj", "{8A054A1C-323C-4513-8975-59F9E2DDC5EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "GenericsPractice\Generics.csproj", "{8A054A1C-323C-4513-8975-59F9E2DDC5EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maersk.Practice.Delegates.UI", "Maersk.Practice.Delegates.UI\Maersk.Practice.Delegates.UI.csproj", "{F25BA954-0F50-4AA4-A277-9C02B83E9E63}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Maersk.Practice.Delegates.UI\Delegates.csproj", "{F25BA954-0F50-4AA4-A277-9C02B83E9E63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maersk.Practice.AnonymousFunction.UI", "Maersk.Practice.AnonymousFunction.UI\Maersk.Practice.AnonymousFunction.UI.csproj", "{2344CC63-4C42-4146-803A-7006A9AAE547}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymousFunction", "Maersk.Practice.AnonymousFunction.UI\AnonymousFunction.csproj", "{2344CC63-4C42-4146-803A-7006A9AAE547}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maersk.Practice.Multithreading.UI", "Maersk.Practice.Multithreading.UI\Maersk.Practice.Multithreading.UI.csproj", "{C266FD57-5A12-43B0-99F4-03E53F316B60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multithreading", "Maersk.Practice.Multithreading.UI\Multithreading.csproj", "{C266FD57-5A12-43B0-99F4-03E53F316B60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maersk.Practice.ThreadClass.UI", "Maersk.Practice.ThreadClass.UI\Maersk.Practice.ThreadClass.UI.csproj", "{51328B19-B94F-4C44-9F1C-DBDDCA5C519A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadClass", "Maersk.Practice.ThreadClass.UI\ThreadClass.csproj", "{51328B19-B94F-4C44-9F1C-DBDDCA5C519A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maersk.Practice.RetrieveDataThread.UI", "Maersk.Practice.RetrieveDataThread.UI\Maersk.Practice.RetrieveDataThread.UI.csproj", "{9B914A04-51D1-4A4A-9A71-6AF8CA3AF300}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetrieveDataThread", "Maersk.Practice.RetrieveDataThread.UI\RetrieveDataThread.csproj", "{9B914A04-51D1-4A4A-9A71-6AF8CA3AF300}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maersk.Practice.Join.IsAlive.UI", "Maersk.Practice.Join.IsAlive.UI\Maersk.Practice.Join.IsAlive.UI.csproj", "{CD23BBFF-4493-444E-94E9-D1AE60B65609}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoinIsAlive", "Maersk.Practice.Join.IsAlive.UI\JoinIsAlive.csproj", "{CD23BBFF-4493-444E-94E9-D1AE60B65609}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maersk.Practice.Synchronization.UI", "Maersk.Practice.Synchronization.UI\Maersk.Practice.Synchronization.UI.csproj", "{51860E5A-80BF-4B0E-B24B-CB1B97F62FFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synchronization", "Maersk.Practice.Synchronization.UI\Synchronization.csproj", "{51860E5A-80BF-4B0E-B24B-CB1B97F62FFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maersk.Practice.MonitorTryEnter.UI", "Maersk.Practice.Monitor.TryEnter.UI\Maersk.Practice.MonitorTryEnter.UI.csproj", "{A8209C87-4136-4401-B03B-C9090C31CA85}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorTryEnter", "Maersk.Practice.Monitor.TryEnter.UI\MonitorTryEnter.csproj", "{A8209C87-4136-4401-B03B-C9090C31CA85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maersk.Practice.MonitorIsAlivePulse.UI", "Maersk.Practice.MonitorIsAlivePulse.UI\Maersk.Practice.MonitorIsAlivePulse.UI.csproj", "{CB2F28F1-12C2-4B76-8B73-FE565BDB4759}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorIsAlivePulse", "Maersk.Practice.MonitorIsAlivePulse.UI\MonitorIsAlivePulse.csproj", "{CB2F28F1-12C2-4B76-8B73-FE565BDB4759}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maersk.Practice.MutexProperties.UI", "Maersk.Practice.Mutex.UI\Maersk.Practice.MutexProperties.UI.csproj", "{174BD955-9B9E-4F53-859C-A571FC8380CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutexProperties", "Maersk.Practice.Mutex.UI\MutexProperties.csproj", "{174BD955-9B9E-4F53-859C-A571FC8380CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SempahoreProperties", "Maersk.Practice.SempahoreProperties.UI\SempahoreProperties.csproj", "{01370F15-8D38-4197-885C-272F0CDEE29E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Maersk.Practice.MultithreadingProperties.UI", "Maersk.Practice.MultithreadingProperties.UI", "{AF98529B-FB08-4407-A5B8-A6812CAD47AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Maersk.Practice.CSharpConcepts.UI", "Maersk.Practice.CSharpConcepts.UI", "{E43FA700-6CC4-430F-8F21-F837A1713A46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,9 +87,27 @@ Global
 		{174BD955-9B9E-4F53-859C-A571FC8380CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{174BD955-9B9E-4F53-859C-A571FC8380CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{174BD955-9B9E-4F53-859C-A571FC8380CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01370F15-8D38-4197-885C-272F0CDEE29E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01370F15-8D38-4197-885C-272F0CDEE29E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01370F15-8D38-4197-885C-272F0CDEE29E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01370F15-8D38-4197-885C-272F0CDEE29E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8A054A1C-323C-4513-8975-59F9E2DDC5EB} = {E43FA700-6CC4-430F-8F21-F837A1713A46}
+		{F25BA954-0F50-4AA4-A277-9C02B83E9E63} = {E43FA700-6CC4-430F-8F21-F837A1713A46}
+		{2344CC63-4C42-4146-803A-7006A9AAE547} = {E43FA700-6CC4-430F-8F21-F837A1713A46}
+		{C266FD57-5A12-43B0-99F4-03E53F316B60} = {AF98529B-FB08-4407-A5B8-A6812CAD47AE}
+		{51328B19-B94F-4C44-9F1C-DBDDCA5C519A} = {AF98529B-FB08-4407-A5B8-A6812CAD47AE}
+		{9B914A04-51D1-4A4A-9A71-6AF8CA3AF300} = {AF98529B-FB08-4407-A5B8-A6812CAD47AE}
+		{CD23BBFF-4493-444E-94E9-D1AE60B65609} = {AF98529B-FB08-4407-A5B8-A6812CAD47AE}
+		{51860E5A-80BF-4B0E-B24B-CB1B97F62FFD} = {AF98529B-FB08-4407-A5B8-A6812CAD47AE}
+		{A8209C87-4136-4401-B03B-C9090C31CA85} = {AF98529B-FB08-4407-A5B8-A6812CAD47AE}
+		{CB2F28F1-12C2-4B76-8B73-FE565BDB4759} = {AF98529B-FB08-4407-A5B8-A6812CAD47AE}
+		{174BD955-9B9E-4F53-859C-A571FC8380CC} = {AF98529B-FB08-4407-A5B8-A6812CAD47AE}
+		{01370F15-8D38-4197-885C-272F0CDEE29E} = {AF98529B-FB08-4407-A5B8-A6812CAD47AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8187EFF1-7ADB-44D8-A574-F4A632E1086C}
