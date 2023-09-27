@@ -29,6 +29,8 @@ namespace Maersk.Practice.CSharp.Console
             addNumbers(100, 40);
             substractNumbers(100, 40);
             System.Console.WriteLine();
+
+
             //Multicasting
             System.Console.WriteLine("After multicasting");
             addNumbers += Substract;
