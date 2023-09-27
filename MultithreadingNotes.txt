@@ -30,3 +30,37 @@ Multithreading Concepts:
 	
 		i. Wait()
 		ii. Release()
+
+6. Foreground Thread ----> Completes it's own task then terminates
+
+7. Background Thread ----> Terminates as soon as the Main Application Terminates.
+
+8. By deafult,
+	i. Primary Threads and Thread Class Constructor are Foreground.
+	ii. ThreadPool Class Threads are Background.
+
+9.Note
+	1: In C#, the foreground threads have the ability to prevent the current application from terminating. 
+	The CLR will not shut down an application (which is to say, unload the hosting AppDomain) until all foreground threads have ended.
+
+	2: In C#, the Background threads are viewed by the CLR as expendable paths of execution that can be ignored at any point in time 
+	(even if they are currently doing some unit of work). Thus, if all foreground threads have terminated, any and all background 
+	threads are automatically killed when the application domain unloads.
+
+10. So, the one and the only difference between AutoResetEvent and ManualResetEvent in C# is that for 
+each WaitOne method there should be a corresponding Set method in AutoResetEvent while for all the WaitOne methods,
+one Set method is enough to release in the case of ManualResetEvent.
+
+11. Thread Life Cycle:
+	i. Unstarted state : new state
+	ii. Runnable : call the start()
+	iii. Running : thread scheduler
+	iv. Not Runnable : sleep, wait, join, waiting for i/o or other resources to be free 
+	v.Dead : enters to dead, terminates or abort state
+
+12. Thread Priority:
+	i. Lowest=0
+	ii. BelowNormal=1
+	iii. Normal=2
+	iv.AboveNormal=3
+	v.Highest=4
