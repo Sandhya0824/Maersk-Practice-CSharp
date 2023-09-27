@@ -1,0 +1,32 @@
+
+Multithreading Concepts:
+
+1. Lock ----> Internal Thread Type Safety (Internally Wraps Enter and Exit Methods in Try Catch Finally Blocks)
+
+2. Monitor ----> Internal Thread Safety (Explicitly use Try Catch Finally Blocks)
+
+		i. TryEnter()
+		ii. Wait()
+		iii. Pulse()
+		iv. PulseAll()
+		
+3. Mutex ----> Only one External Thread 
+		
+		i. OpenExisting()
+		ii. TryOpenExisting()
+		iii. ReleaseMutex()
+		iv. GetAccessControl()
+		v. SetAccessControl()
+
+ 4. Semaphore ----> Many External Threads
+		
+		i. OpenExisting()
+		ii. TryOpenExisting()
+		iii. Release()
+		iv. GetAccessControl()
+		v. SetAccessControl()
+		
+5. SemaphoreSlim ----> Many Internal Threads
+	
+		i. Wait()
+		ii. Release()
