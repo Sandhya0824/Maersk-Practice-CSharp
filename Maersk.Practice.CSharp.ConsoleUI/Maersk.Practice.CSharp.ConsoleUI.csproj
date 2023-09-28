@@ -5,7 +5,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Maersk.Practice.CSharp.ConsoleUI.Multithreading.ThreadingExample</StartupObject>
+    <StartupObject>Maersk.Practice.CSharp.ConsoleUI.Multithreading.ThreadPriorityExample</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
