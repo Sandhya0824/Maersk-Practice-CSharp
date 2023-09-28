@@ -25,10 +25,10 @@ namespace Maersk.Practice.CSharp.Console.Multithreading
         public static void Main(string[] args)
         {
             Printer p = new Printer();
-            Thread t1 = new Thread(new ThreadStart(p.PrintTable));
-            Thread t2 = new Thread(new ThreadStart(p.PrintTable));
-            t1.Start();
-            t2.Start();
+            Thread thread1 = new Thread(new ThreadStart(p.PrintTable));
+            Thread thread2 = new Thread(new ThreadStart(p.PrintTable));
+            thread1.Start();
+            thread2.Start();
         }
     }
 }
