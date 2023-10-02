@@ -21,7 +21,7 @@ namespace Maersk.Practice.CSharp.ConsoleUI.RetrievingDataFromThreadFunction
         }
         public static void CallBackMethod(int Result)
         {
-            Console.WriteLine("The Result is " + Result);
+            Console.WriteLine("The result is " + Result);
         }
     }
 }
